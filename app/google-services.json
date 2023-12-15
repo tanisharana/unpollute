@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "383490209627",
+    "project_id": "unpollute-cb807",
+    "storage_bucket": "unpollute-cb807.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:383490209627:android:f2d2f80fdc4c64ff7d8c7e",
+        "android_client_info": {
+          "package_name": "com.example.trashdetection"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNovbuigoyPTXihIIQlxGM8meFzp-wn_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

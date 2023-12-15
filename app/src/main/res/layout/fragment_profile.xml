@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="@color/colorPrimary"
+    tools:context=".fragment.ProfileFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/profile_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/edit_image"
+                android:src="@drawable/ic_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/profile_tv"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Name"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/profile_tv"
+                android:textStyle="bold"
+                android:textColor="@color/color_dfdfdf"
+                android:layout_marginLeft="10dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textCursorDrawable="@null"
+                android:background="@null"
+                android:layout_toLeftOf="@id/edit_image"
+                android:enabled="false"
+                android:padding="@dimen/padding_10_dp"
+                android:layout_below="@id/name_tv"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:id="@+id/username"
+                android:textSize="18sp"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:id="@+id/bio_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Bio"
+                android:textStyle="bold"
+                android:layout_below="@id/username"
+                android:textColor="@color/color_dfdfdf"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/bio_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bio_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/margin_10_dp"
+                android:layout_marginTop="@dimen/margin_10_dp"
+                android:layout_marginEnd="@dimen/margin_10_dp"
+                android:layout_marginBottom="@dimen/margin_10_dp"
+                android:background="@drawable/rounded_edittext"
+                android:enabled="false"
+                android:gravity="top"
+                android:hint="Your bio can be of 60 words..."
+                android:maxLength="60"
+                android:maxLines="4"
+                android:minLines="4"
+                android:padding="@dimen/padding_10_dp"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                android:textCursorDrawable="@null"
+                android:textSize="17sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:id="@+id/save_btn"
+                android:visibility="gone"
+                android:textAllCaps="false"
+                android:layout_below="@id/bio_et"
+                android:layout_marginTop="@dimen/margin_30_dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button_bg"
+                android:paddingLeft="@dimen/padding_50_dp"
+                android:paddingRight="@dimen/padding_50_dp"
+                android:paddingTop="@dimen/padding_10_dp"
+                android:paddingBottom="@dimen/padding_10_dp"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="@dimen/margin_20_dp"
+
+                />
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:id="@+id/logout"
+        android:paddingLeft="@dimen/padding_20_dp"
+        android:paddingRight="@dimen/padding_20_dp"
+        android:drawablePadding="40dp"
+        android:layout_gravity="left"
+        android:drawableRight="@drawable/ic_arrow_img"
+        android:drawableTint="@color/colorPrimaryDark"
+        android:background="@drawable/button_bg"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+</RelativeLayout>
+
